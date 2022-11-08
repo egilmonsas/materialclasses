@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "materialclasses"
+version = "0.1.0"
+description = ""
+authors = ["Vasse <egilmonsas@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+pydantic = "^1.10.2"
+
+
+[tool.poetry.group.dev.dependencies]
+mypy = "^0.990"
+black = "^22.10.0"
+flake8 = "^5.0.4"
+pytest = "^7.2.0"
+
+[tool.black]
+line-length = 120
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
